@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container py-5 my-5">
+		<div class="row justify-content-center">
+			<div class="col-sm-4">
+				<input type="text" id="Show" readonly="readonly" class="form-control">
+
+				<div class="row no-gutters">
+				<button  class="btn-sm btn-info col-3" onclick="One()">1</button>
+				<button  class="btn-sm btn-info col-3" onclick="Two()">2</button>
+				<button  class="btn-sm btn-info col-3" onclick="Three()">3</button>
+				<button  class="btn-sm btn-info col-3" onclick="Four()">4</button>
+				</div>
+
+
+				<div class="row no-gutters">
+				<button class="btn-sm btn-info col-3" onclick="Five()">5</button>
+				<button class="btn-sm btn-info col-3" onclick="Six()">6</button>
+				<button class="btn-sm btn-info col-3" onclick="Seven()">7</button>
+				<button class="btn-sm btn-info col-3" onclick="Eight()">8</button>
+				</div>
+
+
+
+				<div class="row no-gutters">
+				<button class="btn-sm btn-info col-3" onclick="Nine()">9</button>
+				<button class="btn-sm btn-info col-3" onclick="Zerro()">0</button>
+				<button class="btn-sm btn-info col-3" onclick="Add()">+</button>
+				<button class="btn-sm btn-info col-3" onclick="Sub()">-</button>	
+				</div>
+
+
+				<div class="row no-gutters">
+				<button class="btn-sm btn-info col-3" onclick="Div()">/</button>
+				<button class="btn-sm btn-info col-3" onclick="Mul()">*</button>
+				<button class="btn-sm btn-info col-3" onclick="Equ()">=</button>
+				<button class="btn-sm btn-info col-3" onclick="Clr()">Clr</button>
+				</div>
+
+
+
+				<div class="row no-gutters">
+				<button class="btn-sm btn-info col-12" onclick="Dlt()">Dlt</button>
+				</div>
+
+
+
+
+
+				
+				
+				
+				
+			</div>
+		</div>
+	</div>
+	<script>
+		var e = document.getElementById('Show');
+		function One() {
+			e.value += "1"; 
+		} 
+		
+		function Two() {
+			e.value += "2"; 
+		} 
+		function Three() {
+			e.value += "3"; 
+		} 
+		function Four() {
+			e.value += "4"; 
+		} 
+		function Five() {
+			e.value += "5"; 
+		} 
+		function Six() {
+			e.value += "6"; 
+		} 
+		function Seven() {
+			e.value += "7"; 
+		} 
+		function Eight() {
+			e.value += "8"; 
+		} 
+		function Nine() {
+			e.value += "9"; 
+		} 
+		
+		function Zerro() {
+			e.value += "0"; 
+		} 
+		function Add() {
+			e.value += "+"; 
+		} 
+		function Sub() {
+			e.value += "-"; 
+		} 
+		function Div() {
+			e.value += "/"; 
+		} 
+		function Mul() {
+			e.value += "*"; 
+		} 
+		function Equ() {
+			e.value = eval(e.value); 
+		} 
+		function Clr(){
+			e.value ="";
+		}
+		function Dlt(){
+			var a = e.value;
+			e.value = a.substring(0, a.length-1);
+		}
+
+		
+
+
+
+
+</script>
+</body>
+</html>
